@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080914">
+  <meta name="description" content="Experience DEEPAVALI.26 — a beautiful celebration of light, love, tradition and new beginnings.">
+  <title>DEEPAVALI.26 — A Festival of Light</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- WELCOME EXPERIENCE -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-grain"></div>
+    <div class="intro-mandala">✺</div>
+    <div class="intro-content">
+      <span class="eyebrow">AN INVITATION TO CELEBRATE</span>
+      <div class="intro-lamp">🪔</div>
+      <p class="intro-overline">THE FESTIVAL OF LIGHTS</p>
+      <h1>Deepavali<span>.26</span></h1>
+      <p class="intro-description">A little light. A lot of love. Endless memories.</p>
+      <button class="gold-button" id="enterButton">ENTER THE EXPERIENCE <span>↗</span></button>
+      <span class="intro-foot">06 — 12 NOVEMBER · INDIA</span>
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+  <audio id="diwaliMusic" loop preload="none">
+    <source src="assets/diwali-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-control" id="musicToggle" aria-label="Toggle music">
+    <span class="music-symbol" id="musicIcon">♫</span>
+    <span id="musicLabel">SOUND OFF</span>
+  </button>
+
+  <!-- VISUAL EFFECTS -->
+  <canvas id="particles"></canvas>
+  <canvas id="fireworksCanvas"></canvas>
+  <div class="cursor-glow"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-symbol">✺</span>
+      <span>DEEPAVALI<span class="brand-year">.26</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#celebration">Celebration</a>
+      <a href="#meaning">Our Story</a>
+      <a href="#wishes">Send a Wish</a>
+    </nav>
+
+    <a href="#celebration" class="nav-cta">EXPLORE <span>↗</span></a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-background-glow"></div>
+      <div class="hero-orbit hero-orbit-one"></div>
+      <div class="hero-orbit hero-orbit-two"></div>
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          THE FESTIVAL OF LIGHTS
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <p class="hero-date">06 — 12 NOVEMBER 2026</p>
+
+        <h1>
+          Let There<br>
+          Be <span class="gold-text">Light.</span>
+        </h1>
+
+        <p class="hero-description">
+          Seven beautiful days. Countless traditions.
+          One celebration that brings every heart closer.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#celebration" class="gold-button">DISCOVER THE MAGIC <span>↗</span></a>
+          <a href="#wishes" class="text-button">SEND A WISH <span>→</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <span>LIGHT · LOVE · PROSPERITY</span>
+          <span class="meta-line"></span>
+          <span>INDIA · 2026</span>
+        </div>
+      </div>
+
+      <!-- CSS 3D DIYA -->
+      <div class="diya-scene reveal">
+        <div class="diya-aura"></div>
+        <div class="diya-halo"></div>
+
+        <div class="mandala mandala-one">✺</div>
+        <div class="mandala mandala-two">✧</div>
+
+        <div class="diya-3d">
+          <div class="flame">
+            <div class="flame-core"></div>
+          </div>
+          <div class="wick"></div>
+          <div class="diya-bowl">
+            <div class="bowl-top"></div>
+            <div class="bowl-body"></div>
+            <div class="bowl-bottom"></div>
+            <div class="bowl-shine"></div>
+          </div>
+        </div>
+
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <span class="floating-star star-a">✦</span>
+        <span class="floating-star star-b">✧</span>
+        <span class="floating-star star-c">✦</span>
+        <span class="floating-star star-d">✧</span>
+
+        <div class="diya-caption">ONE LIGHT CAN CHANGE EVERYTHING</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>AN EXPERIENCE OF LIGHT & TRADITION</span>
+        <a href="#introduction">SCROLL TO EXPLORE ↓</a>
+      </div>
+
+      <span class="vertical-label">A CELEBRATION OF LIFE · EST. FOREVER</span>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro-section" id="introduction">
+      <div class="section-index reveal">
+        <span>01 / THE FEELING</span>
+        <span>A TIMELESS CELEBRATION</span>
+      </div>
+
+      <div class="intro-copy reveal">
+        <p class="section-label">BEYOND THE LIGHTS</p>
+        <h2>
+          More than a festival.<br>
+          <span class="gold-text">A feeling.</span>
+        </h2>
+        <p>
+          From the first diya to the final celebration,
+          Diwali brings together the warmth of traditions,
+          the joy of family and the promise of beautiful beginnings.
+        </p>
+      </div>
+
+      <div class="intro-decoration">✺</div>
+    </section>
+
+    <!-- FESTIVAL DAYS -->
+    <section class="celebrations" id="celebration">
+      <div class="section-index reveal">
+        <span>02 / THE CELEBRATION</span>
+        <span>06 — 12 NOVEMBER 2026</span>
+      </div>
+
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-label">THE FESTIVAL COLLECTION · 01—07</p>
+          <h2>Seven Days of<br><span class="gold-text">Wonder.</span></h2>
+        </div>
+        <p>Every day has a story.<br>Every story has its own light.</p>
+      </div>
+
+      <div class="festival-grid">
+
+        <article class="festival-card reveal">
+          <div class="card-top"><span>01</span><span>THE BEGINNING</span></div>
+          <div class="card-art">🪙</div>
+          <div class="card-content">
+            <span class="card-date">06 NOVEMBER 2026</span>
+            <h3>Dhanteras</h3>
+            <p>A celebration of prosperity, health and new beginnings.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card reveal">
+          <div class="card-top"><span>02</span><span>THE PREPARATION</span></div>
+          <div class="card-art">🪔</div>
+          <div class="card-content">
+            <span class="card-date">07 NOVEMBER 2026</span>
+            <h3>Choti Diwali</h3>
+            <p>Traditions, lights and the triumph of good over evil.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card featured reveal">
+          <div class="featured-tag">THE MAIN CELEBRATION ✦</div>
+          <div class="card-top"><span>03</span><span>THE NIGHT OF LIGHTS</span></div>
+          <div class="card-art">✨</div>
+          <div class="card-content">
+            <span class="card-date">08 NOVEMBER 2026</span>
+            <h3>Happy Diwali</h3>
+            <p>The night of lights, Lakshmi Puja, love and happiness.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card reveal">
+          <div class="card-top"><span>04</span><span>THE JOY CONTINUES</span></div>
+          <div class="card-art">🎆</div>
+          <div class="card-content">
+            <span class="card-date">09 NOVEMBER 2026</span>
+            <h3>Festive Memories</h3>
+            <p>Keep the joy of celebration alive with family and friends.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card reveal">
+          <div class="card-top"><span>05</span><span>GRATITUDE</span></div>
+          <div class="card-art">🌸</div>
+          <div class="card-content">
+            <span class="card-date">10 NOVEMBER 2026</span>
+            <h3>Govardhan Puja</h3>
+            <p>Celebrate gratitude, devotion and the Annakut tradition.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card reveal">
+          <div class="card-top"><span>06</span><span>FAMILY BONDS</span></div>
+          <div class="card-art">❤️</div>
+          <div class="card-content">
+            <span class="card-date">11 NOVEMBER 2026</span>
+            <h3>Bhai Dooj</h3>
+            <p>A beautiful celebration of the bond between siblings.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+        <article class="festival-card last-card reveal">
+          <div class="card-top"><span>07</span><span>THE MEMORIES</span></div>
+          <div class="card-art">🪷</div>
+          <div class="card-content">
+            <span class="card-date">12 NOVEMBER 2026</span>
+            <h3>Festival Memories</h3>
+            <p>Carry the light, positivity and joy into every new day.</p>
+            <a href="#wishes">DISCOVER THE SPIRIT ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section reveal">
+      <div class="countdown-decoration">✺</div>
+      <p class="section-label">03 / THE MOMENT WE WAIT FOR</p>
+      <h2>Let the celebration <span class="gold-text">begin.</span></h2>
+
+      <div class="countdown" id="countdown">
+        <div class="time-unit"><strong id="days">00</strong><span>DAYS</span></div>
+        <b>:</b>
+        <div class="time-unit"><strong id="hours">00</strong><span>HOURS</span></div>
+        <b>:</b>
+        <div class="time-unit"><strong id="minutes">00</strong><span>MINUTES</span></div>
+        <b>:</b>
+        <div class="time-unit"><strong id="seconds">00</strong><span>SECONDS</span></div>
+      </div>
+
+      <p id="countdown-message">Until the festival of lights.</p>
+    </section>
+
+    <!-- MEANING -->
+    <section class="meaning-section" id="meaning">
+      <div class="meaning-art reveal">
+        <div class="meaning-glow"></div>
+        <div class="meaning-ring"></div>
+        <div class="meaning-lamp">🪔</div>
+        <span class="meaning-art-label">LIGHT · HOPE · HARMONY</span>
+      </div>
+
+      <div class="meaning-copy reveal">
+        <div class="section-index"><span>04 / THE MEANING</span></div>
+        <p class="section-label">A LIGHT WITHIN US</p>
+        <h2>Light over darkness.<br><span class="gold-text">Hope over fear.</span></h2>
+        <p class="meaning-description">
+          Diwali reminds us that even the smallest light can
+          brighten the darkest night. It is a celebration of
+          kindness, gratitude, togetherness and new beginnings.
+        </p>
+
+        <div class="meaning-points">
+          <div><span>✦</span><p><strong>Light</strong><small>Let positivity guide your way.</small></p></div>
+          <div><span>✦</span><p><strong>Love</strong><small>Celebrate the people who matter.</small></p></div>
+          <div><span>✦</span><p><strong>Prosperity</strong><small>Welcome a brighter tomorrow.</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WISH GENERATOR -->
+    <section class="wishes-section" id="wishes">
+      <div class="wish-decoration">✺</div>
+
+      <div class="wish-panel reveal">
+        <p class="section-label">05 / SHARE THE HAPPINESS</p>
+        <h2>Make someone's<br><span class="gold-text">Diwali special.</span></h2>
+        <p class="wish-intro">Create a beautiful festive greeting with your name.</p>
+
+        <div class="wish-form">
+          <input id="userName" type="text" maxlength="35" placeholder="Enter your name" autocomplete="name">
+          <button id="generateBtn" class="gold-button">CREATE GREETING ✦</button>
+        </div>
+
+        <div class="wish-result" id="wishResult" aria-live="polite"></div>
+
+        <button id="shareBtn" class="outline-button" hidden>
+          SHARE ON WHATSAPP ↗
+        </button>
+      </div>
+    </section>
+
+    <!-- FINAL CELEBRATION -->
+    <section class="final-section">
+      <p class="section-label">UNTIL THE NEXT CELEBRATION</p>
+      <h2>May your world<br>always be <span class="gold-text">illuminated.</span></h2>
+      <div class="final-lamp">🪔</div>
+      <p>Wishing you and your family a beautiful and joyful Diwali.</p>
+      <button class="gold-button" id="fireworksButton">CELEBRATE WITH LIGHTS ✦</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#home" class="brand">
+      <span class="brand-symbol">✺</span>
+      <span>DEEPAVALI<span class="brand-year">.26</span></span>
+    </a>
+    <p>MADE WITH LIGHT & LOVE</p>
+    <span>INDIA · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
